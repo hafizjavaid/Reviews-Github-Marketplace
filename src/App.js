@@ -1,37 +1,8 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import FeedbackList from "./components/FeedbackList";
-import FeedbackStats from "./components/FeedbackStats";
-import FeedbackForm from "./components/FeedbackForm";
-import AboutIconLink from "./shared/AboutIconLink";
-import AboutPage from "./pages/AboutPage";
-import "./index.css";
-import { FeedbackProvider } from "./context/FeedbackContext";
+import './index.css'
 function App() {
-  return (
-    <FeedbackProvider>
-      <Router>
-        <Header />
-        <div className="container">
-          <Routes>
-            <Route
-              exact
-              path="/"
-              element={
-                <>
-                  <FeedbackForm />
-                  <FeedbackStats />
-                  <FeedbackList />
-                </>
-              }
-            ></Route>
-            <Route path="/about" element={<AboutPage />}></Route>
-          </Routes>
-          <AboutIconLink />
-        </div>
-      </Router>
-    </FeedbackProvider>
-  );
+  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
 }
 
 export default App;
+// "server": "json-server --watch db.json --port 5000",
+// "dev": "concurrently \"npm run server\" \"npm start\""
