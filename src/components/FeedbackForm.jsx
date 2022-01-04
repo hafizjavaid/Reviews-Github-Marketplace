@@ -2,7 +2,6 @@ import { useContext, useEffect, useState } from "react";
 import Card from "../shared/Card";
 import Button from "../shared/Button";
 import RatingSelect from "./RatingSelect";
-import { v4 as uuid4 } from "uuid";
 import FeedbackContext from "../context/FeedbackContext";
 
 function FeedbackForm() {
@@ -42,7 +41,6 @@ function FeedbackForm() {
     const newFeedback = {
       text,
       rating,
-      id: uuid4(),
     };
     // if (feedbackEdit.edit) {
     //   updateFeedback(feedbackEdit.item.id, newFeedback);
