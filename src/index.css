@@ -21,6 +21,15 @@ a {
   display: block;
   color: #000000;
 }
+.listingsList {
+  padding: 0;
+}
+.editIcon {
+  cursor: pointer;
+  position: absolute;
+  top: -3.4%;
+  right: 20px;
+}
 
 button {
   outline: none;
@@ -78,7 +87,7 @@ button {
   cursor: pointer;
   position: absolute;
   top: -3%;
-  right: -2%;
+  right: 0%;
 }
 .editIcon {
   cursor: pointer;
@@ -103,7 +112,7 @@ button {
   .listingDetails,
   .category,
   .explore {
-    margin: 3rem;
+    margin: 2rem;
   }
 }
 
